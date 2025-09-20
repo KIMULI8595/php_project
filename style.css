@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.header{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #9b9183;
+    
+}
+
+.header h2{
+    font-weight: 800;
+    color: rgb(245, 16, 0);
+}
+
+.header a{
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.header a button{
+    color: red;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    transition: all .5s;
+    font-size: 18px;
+}
+
+.header a button:hover{
+    background-color: red;
+    color: #fff;
+}
+
+.container{
+    margin: 30px;
+    /* height: 100vh; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dash_h
+{
+    font-size: 3rem;
+    font-weight: 700;
+    color: red;
+    font-style: oblique;
+    padding: 20px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: bisque;
+    padding: 40px;
+    border: 1px solid #353131;
+    border-radius: 10px;
+}
+
+#heading{
+    letter-spacing: 2px;
+    padding: 10px;
+    font-size: 2rem;
+    color: #353131;
+    font-weight: 900;
+}
+
+input{
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1px solid red;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+#btn{
+    border: none;
+    background-color: red;
+    color: #fff;
+    transition: .4s all;
+    margin-bottom: 20px;
+}
+
+#btn:hover{
+    background-color: rgb(245, 188, 188);
+    color: red;
+}
