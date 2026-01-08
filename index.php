@@ -39,7 +39,7 @@
     {
         // Input Data From HTML form
         $userId = $_POST["user_id"];
-        $userPassword = password_hash($_POST["password"], PASSWORD_DEFAULT);
+        $userPassword = $_POST["password"];
 
         // Prepared statement prevents SQL injection attack
         $stmt = $dbConnect->prepare("SELECT user_id, password FROM registration_data WHERE user_id = ? AND password = ?");
