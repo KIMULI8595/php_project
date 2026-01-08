@@ -49,9 +49,7 @@
         $mobileNumber = $_POST["mobile_number"];
         $address = $_POST["physical_address"];
         $department = $_POST["department"];
-        $newPassword = password_hash($_POST["password"], PASSWORD_DEFAULT);
-
-        // Encrypts the password on the db
+        $newPassword = $_POST["password"];
         
         // Prepared statement prevents SQL injection attack
         $stmt = $dbConnect->prepare("INSERT INTO registration_data (user_id, full_name, date_of_birth, email, mobile_number, physical_address, department, password) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
